@@ -19,6 +19,11 @@ export const navLinks = [
     mobile: true,
   },
   {
+    label: "services",
+    href: "/services",
+    mobile: true,
+  },
+  {
     label: "portfolio",
     href: "/portfolio",
     mobile: true,
@@ -31,6 +36,11 @@ export const navLinks = [
   {
     label: "blog",
     href: "/blog",
+    mobile: true,
+  },
+  {
+    label: "contact",
+    href: "/contact",
     mobile: true,
   },
 ];

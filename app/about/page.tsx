@@ -1,12 +1,24 @@
+import React from "react";
 import FakeTerminalWindow from "../components/about/FakeTerminalWindow";
 import Prompt from "../components/about/Prompt";
 import { skills } from "../../lib/constants";
 
-const SkillList = ({ title, items }: { title: string; items: string[] }) => (
+const SkillList = ({
+  title,
+  items,
+}: {
+  title: string;
+  items: { name: string; icon: React.ComponentType | null }[];
+}) => (
   <>
     <li className="text-primary font-semibold">{title}/</li>
     {items.map((item, index) => (
-      <li key={index}>{item}</li>
+      <li key={index} className="flex items-center space-x-2">
+        {item.icon && (
+          <span className="text-2xl">{React.createElement(item.icon)}</span>
+        )}
+        <span>{item.name}</span>
+      </li>
     ))}
   </>
 );

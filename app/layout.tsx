@@ -11,6 +11,15 @@ export const metadata: Metadata = {
   title: "Menoko OG | Portfolio",
   description:
     "Portfolio of Lawrence Jefferson, frontend developer located in Washington state.",
+  keywords: "Lawrence Jefferson, Menoko OG, frontend developer, portfolio",
+  author: "Lawrence Jefferson",
+  openGraph: {
+    title: "Menoko OG | Portfolio",
+    description:
+      "Portfolio of Lawrence Jefferson, frontend developer located in Washington state.",
+    url: "https://yourwebsite.com",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -21,10 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.className} transition-colors duration-100`}>
-        <ThemeProvider themes={["light", "dark"]} defaultTheme="system">
+        <ThemeProvider
+          themes={["light", "dark"]}
+          defaultTheme="system"
+          enableSystem
+        >
           <div className="max-w-screen-lg min-h-screen mx-auto flex flex-col justify-center items-center">
             <Navbar />
-            <main className="flex-grow flex flex-col justify-center items-center">
+            <main className="flex-grow w-full flex flex-col justify-center items-center px-4 md:px-8 py-10">
               {children}
             </main>
             <Footer />

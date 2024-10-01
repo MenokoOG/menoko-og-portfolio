@@ -17,7 +17,7 @@ const BulletPoints = () => {
       <li>🌎 based in Clarksotn, WA</li>
       <li>💼 Menoko OG - Original Geek !</li>
       <li>
-        <a href="mailto:menokoog@gmail.com">📧 let's get in touch!</a>
+        <Link href="/contact">📧 let's get in touch!</Link>
       </li>
       <li>
         📝download my{" "}
