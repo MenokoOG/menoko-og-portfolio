@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/nav/Navbar";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "next-themes";
+import type { Metadata } from "./types"; // Path to your extended type
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Lawrence Jefferson, frontend developer located in Washington state.",
   keywords: "Lawrence Jefferson, Menoko OG, frontend developer, portfolio",
-  author: "Lawrence Jefferson",
+  author: "Lawrence Jefferson", // This is now valid
   openGraph: {
     title: "Menoko OG | Portfolio",
     description:
