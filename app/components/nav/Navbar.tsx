@@ -8,6 +8,8 @@ const Logo = ({ className }: { className?: string }) => {
     <Image
       alt="logo"
       src="/pretty_man.png"
+      width={80} // Example width, adjust as needed
+      height={80} // Example height, adjust as needed
       className={`w-20 rounded-full ${className}`}
     />
   );
