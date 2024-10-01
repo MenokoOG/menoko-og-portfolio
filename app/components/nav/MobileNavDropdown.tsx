@@ -1,5 +1,5 @@
 "use client";
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { navLinks } from "./Navbar";
 import Link from "next/link";
 
@@ -26,7 +26,7 @@ const HamburgerDropdownIcon = () => {
 
 const MobileNavDropdown = () => {
   useEffect(() => {
-    let details = document.querySelector("details");
+    const details = document.querySelector("details");
     const handleClick = ({ target }: MouseEvent) => {
       if (!details?.contains(target as Node)) {
         details?.removeAttribute("open");

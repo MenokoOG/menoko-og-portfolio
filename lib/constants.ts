@@ -26,9 +26,10 @@ export const skills = {
     { name: "CSS", icon: FaCss3Alt },
     { name: "JavaScript", icon: FaJs },
     { name: "Python", icon: FaPython },
-    { name: "SQL", icon: null },
+
     { name: "MongoDB", icon: SiMongodb },
     { name: "Firebase", icon: SiFirebase },
+    { name: "SQL", icon: null },
     { name: "Design Systems", icon: null },
     { name: "Responsive Design", icon: null },
     { name: "SEO", icon: null },
@@ -37,7 +38,7 @@ export const skills = {
   ],
   librariesFrameworks: [
     { name: "React 18 & 19", icon: FaReact },
-    { name: "NextJS", icon: null },
+
     { name: "Tailwind", icon: SiTailwindcss },
     { name: "Jest", icon: SiJest },
     { name: "Redux", icon: SiRedux },
@@ -46,6 +47,7 @@ export const skills = {
     { name: "FastAPI", icon: SiFastapi },
     { name: "Express", icon: FaNodeJs },
     { name: "NodeJS", icon: FaNodeJs },
+    { name: "NextJS", icon: null },
   ],
   toolsOfTheTrade: [
     { name: "Git & Version Control", icon: FaGitAlt },

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import DarkModeToggle from "../DarkModeToggle";
 import MobileNavDropdown from "./MobileNavDropdown";
+import Image from "next/image";
 
 const Logo = ({ className }: { className?: string }) => {
   return (
-    <img
+    <Image
       alt="logo"
       src="/pretty_man.png"
       className={`w-20 rounded-full ${className}`}
