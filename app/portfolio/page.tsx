@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDisplay, faGithub } from "react-icons/fa6";
+import { faDisplay } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import Image from "next/image";
 
 type Project = {
