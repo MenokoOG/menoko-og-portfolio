@@ -64,7 +64,7 @@ const projects: Project[] = [
     title: "LuxGirl OG - Original Geek! Website",
     img: "/mockups/Screenshot 2024-06-01 132640.png",
     description:
-      "Portfolio website for a digital artist LuxGirl OG - Original Geek!, showcasing her works. The project also uses a custom function to populate and import images to the gallery automatically from an image directory where the images are stored. The website is fully responsive and interactive, built with the latest in web technology, and is fully responsive.",
+      "Portfolio website for a digital artist LuxGirl OG - Original Geek!, showcasing her works. The project also uses a custom function to populate and import images to the gallery automatically from an image directory where the images are stored. The website is going through a redesign and will be updated soon.",
     stacks: ["HTML", "Tailwind CSS", "JavaScript", "React", "Firebase", "Vite"],
     live: "https://luxgirlog.netlify.app/",
     gitHub: "https://github.com/MenokoOG/luxgirl-portfolio",
@@ -203,7 +203,7 @@ const Portfolio = () => {
                     <Link
                       href={project.live}
                       target="_blank"
-                      className="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg flex items-center space-x-2"
+                      className="btn bg-blue-600 hover:bg-blue-700  py-2 px-4 rounded-lg flex items-center space-x-2"
                     >
                       <FontAwesomeIcon icon={faDisplay} /> Live
                     </Link>
@@ -216,7 +216,7 @@ const Portfolio = () => {
                     <Link
                       href={project.gitHub}
                       target="_blank"
-                      className="btn bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg flex items-center space-x-2"
+                      className="btn bg-green-600 hover:bg-green-700  py-1 px-4 rounded-lg flex items-center space-x-2"
                     >
                       <FontAwesomeIcon icon={faGithub} /> Code
                     </Link>

@@ -59,7 +59,7 @@ const Services = () => {
           <h2 className="text-3xl font-bold text-blue-600 dark:text-white">
             Services
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-white">
             Explore the services I offer to help bring your ideas to life.
           </p>
         </header>
@@ -68,12 +68,10 @@ const Services = () => {
             <div key={index} className="w-full md:w-1/2 lg:w-1/3 p-4">
               <div className="card bg-base-100 dark:bg-gray-800 shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-xl font-semibold text-blue-600 dark:text-white mb-4">
+                  <h3 className="card-title text-xl font-semibold text-blue-600 dark:text-blue-600 mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {service.description}
-                  </p>
+                  <p>{service.description}</p>
                 </div>
               </div>
             </div>
