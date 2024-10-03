@@ -76,7 +76,7 @@ export default function Home() {
           {socials.map((social, index) => (
             <li
               key={index}
-              className="hover:scale-125 hover:text-white transition-all ease-in-out"
+              className="hover:scale-125 hover:transition-all ease-in-out"
             >
               <Link href={social.href} target="_blank">
                 {social.icon}
