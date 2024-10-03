@@ -32,7 +32,6 @@ import {
   SiVisualstudiocode,
   SiDocker,
   SiJenkins,
-  SiAmazonaws,
   SiNetlify,
   SiVercel,
   SiHeroku,
@@ -82,7 +81,6 @@ export const skills = {
     { name: "ITIL4", icon: null }, // Still no specific icon available
     { name: "Docker", icon: SiDocker },
     { name: "CI/CD", icon: SiJenkins },
-    { name: "AWS", icon: SiAmazonaws },
     { name: "Netlify", icon: SiNetlify },
     { name: "Vercel", icon: SiVercel },
     { name: "Heroku", icon: SiHeroku },
