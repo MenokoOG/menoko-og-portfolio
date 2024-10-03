@@ -3,6 +3,11 @@ import React from "react";
 const blogPosts = [
   {
     title:
+      "Exploring a Dynamic Function for Your Projects: Unleashing the Power of Node.js File System Scanning",
+    link: "https://medium.com/@jefftkddan/exploring-a-dynamic-function-for-your-projects-unleashing-the-power-of-node-js-3c75301ac411",
+  },
+  {
+    title:
       "Cruising on the Coding Highway: A Joyride with JavaScript and Python",
     link: "https://medium.com/@jefftkddan/cruising-on-the-coding-highway-a-joyride-with-javascript-and-python-d28a1a4ea109",
   },
