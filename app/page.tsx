@@ -7,9 +7,9 @@ const ProfilePicture = () => {
     <Image
       src="/l_jefferson.png"
       alt="Profile picture of Lawrence Jefferson"
-      className="bg-gradient-to-br from-blue-600 via-teal-500 to-gray-700 rounded-full w-[350px] md:w-2/5 p-3"
-      width={350} // Provide explicit width
-      height={350} // Provide explicit height
+      className="bg-gradient-to-br from-blue-600 via-teal-500 to-gray-700 rounded-full w-[200px] md:w-[150px] p-2"
+      width={200} // Reduced width
+      height={200} // Reduced height
     />
   );
 };
@@ -18,11 +18,13 @@ const BulletPoints = () => {
   return (
     <ul className="space-y-1 text-xl text-center md:text-left">
       <li>🌎 based in Clarksotn, WA</li>
-      <li>💼 Menoko OG - Original Geek !</li>
+      <li>
+        <Link href="/services">💼 Menoko OG - Original Geek !</Link>
+      </li>
       <li>
         <Link href="/contact">📧 let&apos;s get in touch!</Link>
       </li>
-      <li>
+      {/* <li>
         📝download my{" "}
         <a
           className="link link-primary"
@@ -31,7 +33,7 @@ const BulletPoints = () => {
         >
           resume
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 };

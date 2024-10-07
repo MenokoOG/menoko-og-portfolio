@@ -2,7 +2,7 @@ import React from "react";
 
 interface Service {
   title: string;
-  description: string;
+  description: React.ReactNode; // Change this to accept JSX for the description
 }
 
 const servicesData: Service[] = [
@@ -45,6 +45,38 @@ const servicesData: Service[] = [
     title: "Landing Pages",
     description:
       "I specialize in creating custom landing pages tailored to your specific needs, ensuring a compelling digital presence that perfectly aligns with your brand or product.",
+  },
+  {
+    title: "Agile, Scrum, and AI-Driven Development",
+    description: (
+      <>
+        I implement Agile, Scrum, and ITIL4 methodologies to ensure a flexible,
+        efficient, and collaborative workflow. By using AI-driven technologies,
+        I deliver intelligent, data-driven solutions tailored to meet your
+        business objectives. Whether you need iterative development, efficient
+        IT service management, or intelligent automation, I provide strategies
+        to help your business stay ahead in a fast-paced digital environment.{" "}
+        <br />
+        Learn more about these methodologies:{" "}
+        <a
+          href="https://www.atlassian.com/agile"
+          className="text-blue-500 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Agile
+        </a>{" "}
+        |{" "}
+        <a
+          href="https://www.atlassian.com/agile/scrum"
+          className="text-blue-500 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Scrum
+        </a>
+      </>
+    ),
   },
 ];
 
