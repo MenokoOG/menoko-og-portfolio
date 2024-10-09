@@ -17,7 +17,7 @@ const ProfilePicture = () => {
 const BulletPoints = () => {
   return (
     <ul className="space-y-1 text-xl text-center md:text-left">
-      <li>🌎 based in Clarksotn, WA</li>
+      <li>🌎 based in Clarkston, WA</li>
       <li>
         <Link href="/services">💼 Menoko OG - Original Geek !</Link>
       </li>
