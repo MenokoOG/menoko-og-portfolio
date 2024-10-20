@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: "1Kloc-Useful Apps in 1,000 lines of Code",
     img: "/mockups/working_on_1kloc.png",
     description:
-      " I am creating and will be principle maintainer of the open source project 1Kloc. Welcome to the 1Kloc project! This is an open-source initiative to build useful apps under 1,000 lines of code. Explore, contribute, and showcase your coding skills! We are Under Construction and working on our Docs to get things going, so the docs link below is to our local dev server right now. Hoepfully we will be deployed for tests and showcase within the week!!!",
+      " I am creating and will be principle maintainer of the open source project 1Kloc. Welcome to the 1Kloc project! This is an open-source initiative to build useful apps under 1,000 lines of code. Explore, contribute, and showcase your coding skills! We are Under Construction and working on our Docs to get things going, so the docs link below is to our local dev server right now. Hopefully we will be deployed for tests and showcase within the week!!!",
     stacks: [
       "HTML",
       "Tailwind CSS",
