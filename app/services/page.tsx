@@ -2,7 +2,7 @@ import React from "react";
 
 interface Service {
   title: string;
-  description: React.ReactNode; // Change this to accept JSX for the description
+  description: React.ReactNode;
 }
 
 const servicesData: Service[] = [

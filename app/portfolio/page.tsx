@@ -19,6 +19,27 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Gunkustom",
+    img: "/mockups/gunkustom.png",
+    description:
+      "As the Principal Backend Developer and one of the Founders of GunKustom, I have been instrumental in building the GunKustom API, a modular, scalable, and secure application designed for firearm customization enthusiasts. The API enables users to manage firearm parts, create custom builds, and interact with vendor data through third-party integrations. Built with NestJS and powered by MongoDB, the project incorporates best practices in authentication, data normalization, and API design. The application is still under development and is a core product of the GunKustom start-up.",
+
+    stacks: [
+      " NestJS",
+      " MongoDB",
+      " Passport.js",
+      "Google OAuth",
+      "JWT",
+      " Jest",
+      " Swagger",
+      " TypeScript",
+      " Render",
+    ],
+    live: "https://gunkustom.com/",
+    gitHub: "https://gunkustom.com/",
+  },
+  {
+    id: 2,
     title: "1Kloc-Useful Apps in 1,000 lines of Code",
     img: "/mockups/working_on_1kloc.png",
     description:
@@ -37,7 +58,7 @@ const projects: Project[] = [
     gitHub: "https://github.com/1kloc-Useful-Apps-in-1-000-Lines",
   },
   {
-    id: 2,
+    id: 3,
     title: "LuxGirl OG - Original Geek! Website",
     img: "/mockups/Screenshot 2024-06-01 132640.png",
     description:
@@ -47,7 +68,7 @@ const projects: Project[] = [
     gitHub: "https://github.com/MenokoOG/luxgirl-portfolio",
   },
   {
-    id: 3,
+    id: 4,
     title: "Grocery List App",
     img: "/mockups/grocery.png",
     description:
@@ -64,29 +85,29 @@ const projects: Project[] = [
     live: "",
     gitHub: "https://github.com/MenokoOG/luxgirl-grocery-app",
   },
-  {
-    id: 4,
-    title: "MERN Stack Helper 2.0",
-    img: "/mockups/Screenshot 2024-03-27 163015.png",
-    description:
-      "This application is a full stack application with authentication. It uses HTML, CSS, JavaScript, MongoDB, Express.js, React + Vite, and Node.js. My goal was to create a simple and easy-to-use application that helps developers quickly set up a MERN stack project with authentication. The application uses JWT for authentication and Bcrypt for password hashing.",
-    stacks: [
-      "Node.js",
-      "Express.js",
-      "JavaScript",
-      "MongoDB",
-      "Mongoose",
-      "Bcrypt",
-      "JWT",
-      "Vite",
-      "Morgan",
-      "React",
-      "Axios",
-      "react-router-dom",
-    ],
-    live: "https://mern-stack-helper-2-0.onrender.com",
-    gitHub: "https://github.com/MenokoOG/mern_stack_help_2",
-  },
+  // {
+  //   id: 5,
+  //   title: "MERN Stack Helper 2.0",
+  //   img: "/mockups/Screenshot 2024-03-27 163015.png",
+  //   description:
+  //     "This application is a full stack application with authentication. It uses HTML, CSS, JavaScript, MongoDB, Express.js, React + Vite, and Node.js. My goal was to create a simple and easy-to-use application that helps developers quickly set up a MERN stack project with authentication. The application uses JWT for authentication and Bcrypt for password hashing.",
+  //   stacks: [
+  //     "Node.js",
+  //     "Express.js",
+  //     "JavaScript",
+  //     "MongoDB",
+  //     "Mongoose",
+  //     "Bcrypt",
+  //     "JWT",
+  //     "Vite",
+  //     "Morgan",
+  //     "React",
+  //     "Axios",
+  //     "react-router-dom",
+  //   ],
+  //   live: "https://mern-stack-helper-2-0.onrender.com",
+  //   gitHub: "https://github.com/MenokoOG/mern_stack_help_2",
+  // },
 
   {
     id: 5,
@@ -132,11 +153,8 @@ const Portfolio = () => {
       <h1 className="text-4xl font-bold text-center mb-10 text-blue-600 dark:text-white">
         Featured Works{" "}
       </h1>
-      <p className="text-sm">
-        I am currently in process of revamping this page with more organization
-        for my client projects, projects I have collaborated on, helped on, and
-        then my mess around projects. I have a couple of projects here though
-        for you to explore.
+      <p className="flex flex-wrap justify-center">
+        Here are some of the projects I have worked on.
       </p>
       <br />
 
