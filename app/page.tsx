@@ -19,7 +19,7 @@ const BulletPoints = () => {
     <ul className="space-y-1 text-xl text-center md:text-left">
       <li>🌎 based in Clarkston, WA</li>
       <li>
-        <Link href="/services">💼 Menoko OG - Original Geek !</Link>
+        <Link href="/services">💼 M3n0koOg - Original Geek !</Link>
       </li>
       <li>
         <Link href="/contact">📧 let&apos;s get in touch!</Link>
@@ -69,7 +69,8 @@ export default function Home() {
             <WavingHand />
           </h1>
           <h2 className="text-3xl">
-            I&apos;m a full stack Javascript & Python developer.
+            I&apos;m the Chief Technology Officer of GunKustom.com and a full
+            stack Javascript & Python software engineer.
           </h2>
         </div>
         <BulletPoints />
