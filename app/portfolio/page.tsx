@@ -1,69 +1,70 @@
-import Link from "next/link";
+// app/portfolio/page.tsx
+
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDisplay } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import Image from "next/image";
-
-type Project = {
+interface Project {
   id: number;
   title: string;
   img: string;
   description: string;
   stacks: string[];
-  live: string;
-  gitHub: string;
-};
+  live?: string;
+  gitHub?: string;
+}
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Gunkustom",
+    title: "GunKustom API",
     img: "/mockups/gunkustom.png",
     description:
-      "As the Principal Backend Developer and one of the Founders of GunKustom, I have been instrumental in building the GunKustom API, a modular, scalable, and secure application designed for firearm customization enthusiasts. The API enables users to manage firearm parts, create custom builds, and interact with vendor data through third-party integrations. Built with NestJS and powered by MongoDB, the project incorporates best practices in authentication, data normalization, and API design. The application is still under development and is a core product of the GunKustom start-up.",
-
+      "As Co-Founder & CTO, I architected and built the GunKustom API—a modular, scalable, and secure backend for firearm customization. Features include part management, custom builds, and vendor integrations using NestJS, MongoDB, Passport.js, Google OAuth, JWT, and Swagger.",
     stacks: [
-      " NestJS",
-      " MongoDB",
-      " Passport.js",
+      "NestJS",
+      "MongoDB",
+      "Passport.js",
       "Google OAuth",
       "JWT",
-      " Jest",
-      " Swagger",
-      " TypeScript",
-      " Render",
+      "Jest",
+      "Swagger",
+      "TypeScript",
+      "Render",
     ],
     live: "https://gunkustom.com/",
-    gitHub: "https://gunkustom.com/",
+    gitHub: "https://github.com/MenokoOG/gunkustom-api",
   },
   {
     id: 2,
-    title: "1Kloc-Useful Apps in 1,000 lines of Code",
-    img: "/mockups/working_on_1kloc.png",
+    title: "Powalert",
+    img: "/powalert.jpg",
     description:
-      " I am creating and will be principle maintainer of the open source project 1Kloc. Welcome to the 1Kloc project! This is an open-source initiative to build useful apps under 1,000 lines of code. Explore, contribute, and showcase your coding skills! We are Under Construction and working on our Docs to get things going, so the docs link below is to our local dev server right now. Hopefully we will be deployed for tests and showcase within the week!!!",
+      "I built and maintain the Powalert backend server powering https://powalert.com—a real-time monitoring and alert platform. The server aggregates data streams, applies threshold-based rules, and issues push notifications via SMS, email, and webhooks. Tech stack: Node.js, GraphQL, Redis pub/sub, MongoDB, TypeScript, Docker, and AWS Lambda for scalability.",
     stacks: [
-      "HTML",
-      "Tailwind CSS",
-      "JavaScript",
-      "React",
-      "React-Router-Dom",
-      "Docusaurus",
-      "Firebase",
-      "Vite",
+      "Node.js",
+      "GraphQL",
+      "Redis",
+      "MongoDB",
+      "TypeScript",
+      "Docker",
+      "AWS Lambda",
+      "Twilio",
+      "Jest",
     ],
-    live: "",
-    gitHub: "https://github.com/1kloc-Useful-Apps-in-1-000-Lines",
+    live: "https://powalert.com",
+    gitHub: "https://github.com/MenokoOG/powalert-backend",
   },
   {
     id: 3,
-    title: "LuxGirl OG - Original Geek! Website",
+    title: "LuxGirl OG Portfolio",
     img: "/mockups/Screenshot 2024-06-01 132640.png",
     description:
-      "Portfolio website for a digital artist LuxGirl OG - Original Geek!, showcasing her works. The project also uses a custom function to populate and import images to the gallery automatically from an image directory where the images are stored. The website is going through a redesign and will be updated soon.",
-    stacks: ["HTML", "Tailwind CSS", "JavaScript", "React", "Firebase", "Vite"],
+      "Portfolio site for digital artist LuxGirl OG—built with React, Vite, Tailwind CSS, and Firebase/Firestore. Includes a dynamic gallery loader for effortless asset updates.",
+    stacks: ["React", "Vite", "Tailwind CSS", "Firebase", "TypeScript"],
     live: "https://luxgirlog.netlify.app/",
     gitHub: "https://github.com/MenokoOG/luxgirl-portfolio",
   },
@@ -72,93 +73,23 @@ const projects: Project[] = [
     title: "Grocery List App",
     img: "/mockups/grocery.png",
     description:
-      "Grocery list application I developed for my daughter. It has full CRUD operations and is an alternative to a full stack application with programmed back-end by leveraging Firebase. It is fully responsive and interactive.",
-    stacks: [
-      "HTML",
-      "Tailwind CSS",
-      "JavaScript",
-      "Firebase",
-      "Vite",
-      "React",
-      "Material-UI",
-    ],
-    live: "",
+      "Responsive CRUD grocery app for a private client—built in React + Firebase with Material-UI components and real-time data sync.",
+    stacks: ["React", "Firebase", "Material-UI", "Tailwind CSS", "TypeScript"],
     gitHub: "https://github.com/MenokoOG/luxgirl-grocery-app",
-  },
-  // {
-  //   id: 5,
-  //   title: "MERN Stack Helper 2.0",
-  //   img: "/mockups/Screenshot 2024-03-27 163015.png",
-  //   description:
-  //     "This application is a full stack application with authentication. It uses HTML, CSS, JavaScript, MongoDB, Express.js, React + Vite, and Node.js. My goal was to create a simple and easy-to-use application that helps developers quickly set up a MERN stack project with authentication. The application uses JWT for authentication and Bcrypt for password hashing.",
-  //   stacks: [
-  //     "Node.js",
-  //     "Express.js",
-  //     "JavaScript",
-  //     "MongoDB",
-  //     "Mongoose",
-  //     "Bcrypt",
-  //     "JWT",
-  //     "Vite",
-  //     "Morgan",
-  //     "React",
-  //     "Axios",
-  //     "react-router-dom",
-  //   ],
-  //   live: "https://mern-stack-helper-2-0.onrender.com",
-  //   gitHub: "https://github.com/MenokoOG/mern_stack_help_2",
-  // },
-
-  {
-    id: 5,
-    title: "My 2010-2013 Web Projects",
-    img: "/mockups/Screenshot 2024-03-17 115744.png",
-    description:
-      "Web projects I developed between 2010 and 2013. The projects are a mix of HTML, CSS, JavaScript, and Adobe Master Collections. The projects were developed in Adobe Dreamweaver, Photoshop, and Illustrator. This was pre-React and pre-Node.js era so sites are not pretty or mobile first at all.They include a personal portfolio, my old military blog site, a news site, a couple one page landing sites, and a website for a motor cycle club. ",
-    stacks: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Adobe Master Collection",
-      "Dreamweaver",
-      "Photoshop",
-      "Illustrator",
-    ],
-    live: "https://menokoog.github.io/Past-Web-Projects-for-Clients/",
-    gitHub: "https://github.com/MenokoOG/Past-Web-Projects-for-Clients",
-  },
-  {
-    id: 6,
-    title: "ToDo App in Nx Dev Monorepo",
-    img: "/mockups/nx_todo.png",
-    description:
-      "Full Stack todo CRUD app built in Nx Dev monorepo, Nest.js, React, Typescript, and MongoDB.",
-    stacks: [
-      "React",
-      "HTML",
-      "Tailwind CSS",
-      "Typescript",
-      "Nest.js",
-      "MongoDB",
-      "Nx Dev",
-    ],
-    live: "",
-    gitHub: "https://github.com/MenokoOG/todo-app",
   },
 ];
 
-const Portfolio = () => {
+const PortfolioPage: React.FC = () => {
   return (
-    <div className="container mx-auto py-10">
-      <h1 className="text-4xl font-bold text-center mb-10 text-blue-600 dark:text-white">
-        Featured Works{" "}
+    <main className="container mx-auto py-10">
+      <h1 className="text-4xl font-bold text-center mb-6 text-blue-600 dark:text-white">
+        Featured CTO Projects
       </h1>
-      <p className="flex flex-wrap justify-center">
-        Here are some of the projects I have worked on.
+      <p className="text-center text-lg mb-8">
+        My core professional work as CTO of GunKustom and creator of Powalert.
       </p>
-      <br />
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project) => (
           <div key={project.id} className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
             <div className="card bg-base-100 shadow-xl">
@@ -172,13 +103,13 @@ const Portfolio = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-blue-600  dark:text-blue-400">
+                <h2 className="card-title text-blue-600 dark:text-blue-400">
                   {project.title}
                 </h2>
                 <p>{project.description}</p>
                 <div className="flex flex-wrap mb-4">
-                  {project.stacks.map((stack, index) => (
-                    <span key={index} className="badge badge-outline mr-2 mb-2">
+                  {project.stacks.map((stack, idx) => (
+                    <span key={idx} className="badge badge-outline mr-2 mb-2">
                       {stack}
                     </span>
                   ))}
@@ -188,9 +119,10 @@ const Portfolio = () => {
                     <Link
                       href={project.live}
                       target="_blank"
-                      className="btn bg-blue-600 hover:bg-blue-700  py-2 px-4 rounded-lg flex items-center space-x-2"
+                      className="btn bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-lg flex items-center space-x-2"
                     >
-                      <FontAwesomeIcon icon={faDisplay} /> Live
+                      <FontAwesomeIcon icon={faDisplay} />
+                      <span>Live</span>
                     </Link>
                   ) : (
                     <span className="btn bg-gray-400 text-white py-2 px-4 rounded-lg cursor-not-allowed">
@@ -201,9 +133,10 @@ const Portfolio = () => {
                     <Link
                       href={project.gitHub}
                       target="_blank"
-                      className="btn bg-green-600 hover:bg-green-700  py-1 px-4 rounded-lg flex items-center space-x-2"
+                      className="btn bg-green-600 hover:bg-green-700 py-2 px-4 rounded-lg flex items-center space-x-2"
                     >
-                      <FontAwesomeIcon icon={faGithub} /> Code
+                      <FontAwesomeIcon icon={faGithub} />
+                      <span>Code</span>
                     </Link>
                   ) : (
                     <span className="btn bg-gray-400 text-white py-2 px-4 rounded-lg cursor-not-allowed">
@@ -216,8 +149,8 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
-export default Portfolio;
+export default PortfolioPage;
